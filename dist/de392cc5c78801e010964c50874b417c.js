@@ -1,0 +1,7 @@
+require=function(r,e,n){function t(n,o){function i(r){return t(i.resolve(r))}function f(e){return r[n][1][e]||e}if(!e[n]){if(!r[n]){var c="function"==typeof require&&require;if(!o&&c)return c(n,!0);if(u)return u(n,!0);var l=new Error("Cannot find module '"+n+"'");throw l.code="MODULE_NOT_FOUND",l}i.resolve=f;var s=e[n]=new t.Module(n);r[n][0].call(s.exports,i,s,s.exports)}return e[n].exports}function o(r){this.id=r,this.bundle=t,this.exports={}}var u="function"==typeof require&&require;t.isParcelRequire=!0,t.Module=o,t.modules=r,t.cache=e,t.parent=u;for(var i=0;i<n.length;i++)t(n[i]);return t}({30:[function(require,module,exports) {
+
+},{}],14:[function(require,module,exports) {
+var e=document.querySelector(".jsBox_title_span");e.innerHTML="connected",e.style.color="#02a000";var t=document.querySelector(".jsBox_textarea"),o=document.querySelector(".jsBox_text_span"),r=document.querySelector(".jsBox_progressBar-active");t.addEventListener("input",function(){var e=t.value.length,n=0;o.textContent=e,e>50?(n=50,o.style.color="red",o.style.fontWeight="bold",r.style.background="red"):(n=e,o.style.color="",r.style.background="");var l=100*n/50;r.style.width=l+"%"});
+},{}],6:[function(require,module,exports) {
+"use strict";require("flexboxgrid"),require("../styles/styles.scss"),require("./script.js");
+},{"flexboxgrid":30,"../styles/styles.scss":30,"./script.js":14}]},{},[6])

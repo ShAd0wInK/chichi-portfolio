@@ -1,0 +1,124 @@
+.connectBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 15px 15px;
+  justify-content: center;
+  margin: 25px;
+}
+.fontsBox {
+  background: $Lgh-opMed;
+  border-radius: 5px;
+  &_title {
+    background: $Lgh-opMed;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: $Lbs-Reg;
+    font-size: $xReg;
+    &_span {
+      color: $green;
+    }
+  }
+  &_items {
+    padding: 10px 20px;
+  }
+  &_item {
+    font-size: $Reg;
+    padding: 5px 0;
+    &:nth-child(1) {
+      font-family: $Osw-xLgh;
+    }
+    &:nth-child(2) {
+      font-family: $Osw-Lgh;
+    }
+    &:nth-child(3) {
+      font-family: $Osw-Reg;
+    }
+    &:nth-child(4) {
+      font-family: $Osw-sBld;
+    }
+    &:nth-child(5) {
+      font-family: $Osw-Bld;
+    }
+    &:nth-child(6) {
+      font-family: $Lbs-Reg;
+    }
+  }
+}
+.jsBox {
+  background: $Ylw-opMed;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &_title {
+    background: $Ylw-opMed;
+    width: 95%;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: $Lbs-Reg;
+    font-size: $xReg;
+    &_span {
+      color: $red;
+    }
+  }
+  &_textarea {
+    color: #000;
+    width: 300px;
+    height: 100px;
+    margin: 25px 0;
+    padding: 5px;
+    font-size: 1.5em;
+    font-family: $Osw-xLgh;
+    border: 2px green solid;
+  }
+  &_text {
+    color: #000;
+    font-family: $Osw-Reg;
+    font-size: 1.5em;
+    text-align: center;
+    &_span {
+       color: #000;
+    }
+  }
+  &_progressBar {
+    background: $Lgh-opMed;
+    width: 75%;
+    height: 10px;
+    margin: 25px 0;
+    border-radius: 5px;
+    &-active {
+      background: $blue;
+      width: 0%;
+      height: 10px;
+      border-radius: 5px;
+    }
+  }
+}
+.clear {
+  background: $Cyn-opMed;
+  border-radius: 5px;
+  &_title {
+    background: $Cyn-opMed;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: $Lbs-Reg;
+    font-size: $xReg;
+
+  }
+  &_text {
+    font-family: $Osw-Reg;
+    font-size: $Reg;
+    padding: 20px;
+  }
+  &_code {
+    color: #f4f4f4;
+    background: $Blk-opMed;
+    padding: 8px 10px;
+    margin: 20px 0 20px 10px;
+    border-radius: 5px;
+  }
+}

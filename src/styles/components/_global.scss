@@ -1,0 +1,9 @@
+body {
+  background: url('../assets/imgs/bg.jpg') no-repeat center;
+  background-size: cover;
+  background-position: fixed;
+}
+textarea:focus {
+  outline: 0;
+  resize: none;
+}

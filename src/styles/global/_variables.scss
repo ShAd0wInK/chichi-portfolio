@@ -1,0 +1,38 @@
+// FONT-FAMILY ------------------------
+$Osw-xLgh: 'Oswald-ExtraLight';
+$Osw-Lgh: 'Oswald-Light';
+$Osw-Reg: 'Oswald-Regular';
+$Osw-sBld: 'Oswald-SemiBold';
+$Osw-Bld: 'Oswald-Bold';
+$Lbs-Reg: 'Lobster-Regular';
+
+// FONT-SIZE --------------------------
+$tooBig: 7.2rem;
+$xxBig: 4rem;
+$xBig: 3rem;
+$Big: 2.4rem;
+$xReg: 2rem;
+$Reg: 1.4rem;
+$Sml: 1.2rem;
+
+// COLORS -----------------------------
+$green: #02a000;
+$red: #e50000;
+$blue: #7fa7ff;
+$purple: #eaeeff;
+
+// RBGA -------------------------------
+$Invisible: rgba(0,0,0,0);
+$Blk-opMed: rgba(0,0,0,0.66);
+$Lgh-opMed: rgba(255,255,255,0.66);
+$Ylw-opMed: rgba(247,240,180,0.66);
+$Cyn-opMed: rgba(200,255,253,0.66);
+
+// LINEAR-GRADIENT --------------------
+$Light-opMedToInvisible: linear-gradient(orange, $Invisible);
+
+// Breakpoints
+$bp-tablet: 600px;
+$bp-desktop: 949px;
+$bp-desktop-large: 1200px;
+$bp-desktop-x-large: 1800px;
