@@ -14,7 +14,7 @@
     padding: 10px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    font-family: $Lbs-Reg;
+    font-family: $Rlw-Reg;
     font-size: $xReg;
     &_span {
       color: $green;
@@ -27,22 +27,22 @@
     font-size: $Reg;
     padding: 5px 0;
     &:nth-child(1) {
-      font-family: $Osw-xLgh;
+      font-family: $Rlw-xLgh;
     }
     &:nth-child(2) {
-      font-family: $Osw-Lgh;
+      font-family: $Rlw-Lgh;
     }
     &:nth-child(3) {
-      font-family: $Osw-Reg;
+      font-family: $Rlw-Reg;
     }
     &:nth-child(4) {
-      font-family: $Osw-sBld;
+      font-family: $Rlw-sBld;
     }
     &:nth-child(5) {
-      font-family: $Osw-Bld;
+      font-family: $Rlw-Bld;
     }
     &:nth-child(6) {
-      font-family: $Lbs-Reg;
+      font-family: $Rlw-Reg;
     }
   }
 }
@@ -58,7 +58,7 @@
     padding: 10px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    font-family: $Lbs-Reg;
+    font-family: $Rlw-Reg;
     font-size: $xReg;
     &_span {
       color: $red;
@@ -71,12 +71,12 @@
     margin: 25px 0;
     padding: 5px;
     font-size: 1.5em;
-    font-family: $Osw-xLgh;
+    font-family: $Rlw-xLgh;
     border: 2px green solid;
   }
   &_text {
     color: #000;
-    font-family: $Osw-Reg;
+    font-family: $Rlw-Reg;
     font-size: 1.5em;
     text-align: center;
     &_span {
@@ -105,12 +105,12 @@
     padding: 10px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    font-family: $Lbs-Reg;
+    font-family: $Rlw-Reg;
     font-size: $xReg;
 
   }
   &_text {
-    font-family: $Osw-Reg;
+    font-family: $Rlw-Reg;
     font-size: $Reg;
     padding: 20px;
   }
