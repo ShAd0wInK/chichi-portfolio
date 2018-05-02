@@ -1,0 +1,33 @@
+.cv {
+  background: $red;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  &_arrowBox {
+    width: 350px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    &_text {
+      color: #fff;
+      font-family: $Rlw-Lgh;
+      font-size: $Reg;
+      position: absolute;
+      bottom: 14px;
+      left: 103px;
+      &_span {
+        color: #000;
+      }
+    }
+    &_img {
+      position: absolute;
+      top: 23px;
+      left: 23px;
+      transform: rotate(180deg);
+    }
+  }
+}

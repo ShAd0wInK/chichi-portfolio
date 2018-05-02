@@ -2,6 +2,7 @@ body {
   background: url('../assets/imgs/bg.jpg') no-repeat center;
   background-size: cover;
   background-position: fixed;
+  overflow: hidden;
 }
 textarea:focus {
   outline: 0;

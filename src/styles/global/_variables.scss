@@ -15,20 +15,14 @@ $Reg: 1.4rem;
 $Sml: 1.2rem;
 
 // COLORS -----------------------------
-$green: #02a000;
-$red: #e50000;
-$blue: #7fa7ff;
-$purple: #eaeeff;
+$blueDeep: #2C363F;
+$red: #CC5245;
+$light: #F2F2F2;
 
 // RBGA -------------------------------
-$Invisible: rgba(0,0,0,0);
-$Blk-opMed: rgba(0,0,0,0.66);
-$Lgh-opMed: rgba(255,255,255,0.66);
-$Ylw-opMed: rgba(247,240,180,0.66);
-$Cyn-opMed: rgba(200,255,253,0.66);
 
 // LINEAR-GRADIENT --------------------
-$Light-opMedToInvisible: linear-gradient(orange, $Invisible);
+
 
 // Breakpoints
 $bp-tablet: 600px;

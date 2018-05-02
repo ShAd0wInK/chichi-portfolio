@@ -1,0 +1,33 @@
+.home {
+  background: $blueDeep;
+  width: 100%;
+  height: 100vh;
+  &_arrowBox {
+    cursor: pointer;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    &_text {
+      color: #fff;
+      width: 100%;
+      font-family: $Rlw-Lgh;
+      font-size: $Reg;
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, 0);
+      &_span {
+        color: $red;
+      }
+    }
+    &_img {
+      position: absolute;
+      bottom: 25px;
+      left: 53%;
+      transform: translate(-50%, 0) rotate(90deg);
+    }
+  }
+}

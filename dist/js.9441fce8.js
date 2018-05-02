@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({16:[function(require,module,exports) {
+})({19:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -107,7 +107,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],9:[function(require,module,exports) {
+},{}],18:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -138,48 +138,57 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":16}],8:[function(require,module,exports) {
+},{"./bundle-url":19}],16:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":9}],6:[function(require,module,exports) {
+},{"_css_loader":18}],13:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../assets/fonts/Raleway/Raleway-ExtraLight.ttf":[["Raleway-ExtraLight.2b25e01a.ttf",11],11],"./../assets/fonts/Raleway/Raleway-Light.ttf":[["Raleway-Light.99e9cac1.ttf",12],12],"./../assets/fonts/Raleway/Raleway-Regular.ttf":[["Raleway-Regular.653c020b.ttf",13],13],"./../assets/fonts/Raleway/Raleway-SemiBold.ttf":[["Raleway-SemiBold.2de6002e.ttf",14],14],"./../assets/fonts/Raleway/Raleway-Bold.ttf":[["Raleway-Bold.11cb2380.ttf",15],15],"./../assets/imgs/bg.jpg":[["bg.51f6eb56.jpg",10],10],"_css_loader":9}],7:[function(require,module,exports) {
-var jsSpan = document.querySelector('.jsBox_title_span');
+},{"./../assets/fonts/Raleway/Raleway-ExtraLight.ttf":[["Raleway-ExtraLight.2b25e01a.ttf",28],28],"./../assets/fonts/Raleway/Raleway-Light.ttf":[["Raleway-Light.99e9cac1.ttf",29],29],"./../assets/fonts/Raleway/Raleway-Regular.ttf":[["Raleway-Regular.653c020b.ttf",30],30],"./../assets/fonts/Raleway/Raleway-SemiBold.ttf":[["Raleway-SemiBold.2de6002e.ttf",31],31],"./../assets/fonts/Raleway/Raleway-Bold.ttf":[["Raleway-Bold.11cb2380.ttf",32],32],"./../assets/imgs/bg.jpg":[["bg.51f6eb56.jpg",27],27],"_css_loader":18}],14:[function(require,module,exports) {
+// Moving
+var home = document.querySelector('.home');
+var homeHeight = home.offsetHeight;
+var homeWidth = home.offsetWidth;
+var gotoHome = document.querySelector('#gotoHome');
+var gotoIntro = document.querySelector('#gotoIntro');
+var gotoProjects = document.querySelector('#gotoProjects');
+var gotoCv = document.querySelector('#gotoCv');
 
-jsSpan.innerHTML = 'connected';
-jsSpan.style.color = '#02a000';
-
-var textarea = document.querySelector('.jsBox_textarea');
-var nb = document.querySelector('.jsBox_text_span');
-var prog = document.querySelector('.jsBox_progressBar-active');
-
-textarea.addEventListener('input', function () {
-  // when  the user change the textarea
-  var nbChar = textarea.value.length; // take the number of characters
-  var nb_max = 0; // init the max at 0
-  nb.textContent = nbChar; // change the value in the HTML
-  if (nbChar > 50) {
-    // when the limit is  reached
-    nb_max = 50;
-    nb.style.color = "red"; // change style
-    nb.style.fontWeight = "bold"; // change style
-    prog.style.background = "red"; // change style
-  } else {
-    nb_max = nbChar;
-    nb.style.color = "";
-    prog.style.background = "";
-  }
-  var percent = nb_max * 100 / 50; // the percent of the progressBar
-  prog.style.width = percent + '%'; // fill the progressBar
+gotoHome.addEventListener('click', function () {
+  window.scrollBy({
+    top: 0,
+    left: -homeWidth,
+    behavior: 'smooth'
+  });
 });
-},{}],2:[function(require,module,exports) {
+gotoIntro.addEventListener('click', function () {
+  window.scrollBy({
+    top: homeHeight,
+    left: 0,
+    behavior: 'smooth'
+  });
+});
+gotoCv.addEventListener('click', function () {
+  window.scrollBy({
+    top: -homeHeight,
+    left: 0,
+    behavior: 'smooth'
+  });
+});
+gotoProjects.addEventListener('click', function () {
+  window.scrollBy({
+    top: 0,
+    left: homeWidth,
+    behavior: 'smooth'
+  });
+});
+},{}],9:[function(require,module,exports) {
 'use strict';
 
 require('flexboxgrid');
@@ -187,7 +196,7 @@ require('flexboxgrid');
 require('../styles/styles.scss');
 
 require('./script.js');
-},{"flexboxgrid":8,"../styles/styles.scss":6,"./script.js":7}],17:[function(require,module,exports) {
+},{"flexboxgrid":16,"../styles/styles.scss":13,"./script.js":14}],61:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -217,7 +226,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52636' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '60219' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -356,5 +365,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[17,2])
+},{}]},{},[61,9])
 //# sourceMappingURL=/js.9441fce8.map

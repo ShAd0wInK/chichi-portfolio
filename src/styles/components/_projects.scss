@@ -1,0 +1,33 @@
+.projects {
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 100vh;
+  left: 100%;
+  &_arrowBox {
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 100px;
+    right: -100px;
+    transform: rotate(-90deg);
+    &_text {
+      color: #000;
+      font-family: $Rlw-Lgh;
+      font-size: $Reg;
+      position: absolute;
+      bottom: 14px;
+      right: 100px;
+      &_span {
+        color: $red;
+      }
+    }
+    &_img {
+      position: absolute;
+      bottom: 22px;
+      right: 19px;
+    }
+  }
+}
