@@ -2,9 +2,50 @@
   background: #fff;
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: absolute;
   top: 100vh;
   left: 100%;
+  &_title {
+    color: #000;
+    font-size: $Big;
+    font-family: $Rlw-Bld;
+    padding: 25px 0 0 25px;
+    &_span {
+      color: $red;
+    }
+  }
+  &_projectsBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 50px;
+    &_article {
+      width: 48%;
+      height: 300px;
+      background: url('../assets/imgs/intro_bg.jpg') no-repeat center;
+      background-size: cover;
+      display: flex;
+      align-items: flex-end;
+      &_title {
+        color: #fff;
+        font-family: $Rlw-sBld;
+        font-size: $xBig;
+        padding: 10px;
+      }
+    }
+  }
+  &_nav {
+    display: flex;
+    justify-content: center;
+    &_img {
+      height: 50px;
+      width: auto;
+      padding-bottom: 25px;
+    }
+  }
   &_arrowBox {
     width: 250px;
     height: 50px;
@@ -16,7 +57,7 @@
     &_text {
       color: #000;
       font-family: $Rlw-Lgh;
-      font-size: $Reg;
+      font-size: $xReg;
       position: absolute;
       bottom: 14px;
       right: 100px;

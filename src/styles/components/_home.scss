@@ -2,19 +2,38 @@
   background: $blueDeep;
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_titleBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &_img {
+      height: 100px;
+      width: auto;
+    }
+    &_title {
+      color: #fff;
+      font-size: $xBig;
+      font-family: $Rlw-xLgh;
+      margin-top: 50px;
+    }
+  }
   &_arrowBox {
     cursor: pointer;
-    width: 150px;
-    height: 100px;
+    width: 15rem;
+    height: 10rem;
     position: absolute;
-    bottom: 10px;
+    bottom: 1rem;
     left: 50%;
     transform: translate(-50%, 0);
     &_text {
       color: #fff;
       width: 100%;
       font-family: $Rlw-Lgh;
-      font-size: $Reg;
+      font-size: $xReg;
       position: absolute;
       text-align: center;
       left: 50%;
@@ -25,7 +44,7 @@
     }
     &_img {
       position: absolute;
-      bottom: 25px;
+      bottom: 2.5rem;
       left: 53%;
       transform: translate(-50%, 0) rotate(90deg);
     }

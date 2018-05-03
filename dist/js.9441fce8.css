@@ -1014,6 +1014,9 @@ table {
   font-family: "Raleway-Bold";
   src: url("Raleway-Bold.11cb2380.ttf"); }
 
+html {
+  font-size: 62.5%; }
+
 body {
   background: url("bg.51f6eb56.jpg") no-repeat center;
   background-size: cover;
@@ -1027,13 +1030,36 @@ textarea:focus {
 .home {
   background: #2C363F;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .home_titleBox {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .home_titleBox_img {
+      height: 100px;
+      width: auto; }
+    .home_titleBox_title {
+      color: #fff;
+      font-size: 3rem;
+      font-family: "Raleway-ExtraLight";
+      margin-top: 50px; }
   .home_arrowBox {
     cursor: pointer;
-    width: 150px;
-    height: 100px;
+    width: 15rem;
+    height: 10rem;
     position: absolute;
-    bottom: 10px;
+    bottom: 1rem;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
@@ -1042,7 +1068,7 @@ textarea:focus {
       color: #fff;
       width: 100%;
       font-family: "Raleway-Light";
-      font-size: 1.4rem;
+      font-size: 2rem;
       position: absolute;
       text-align: center;
       left: 50%;
@@ -1053,19 +1079,56 @@ textarea:focus {
         color: #CC5245; }
     .home_arrowBox_img {
       position: absolute;
-      bottom: 25px;
+      bottom: 2.5rem;
       left: 53%;
       -webkit-transform: translate(-50%, 0) rotate(90deg);
           -ms-transform: translate(-50%, 0) rotate(90deg);
               transform: translate(-50%, 0) rotate(90deg); }
 
 .intro {
-  background: #000;
+  background: url("intro_bg.236f3a88.jpg") no-repeat center;
+  background-size: cover;
   width: 100%;
   height: 100vh;
   position: absolute;
   top: 100vh;
   left: 0; }
+  .intro_articleBox {
+    width: 100%;
+    height: 100vh;
+    display: -ms-flexbox;
+    display: flex; }
+    .intro_articleBox_article {
+      width: 50%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      padding-right: 50px;
+      text-align: justify; }
+      .intro_articleBox_article_text {
+        color: #fff;
+        font-size: 2rem;
+        font-family: "Raleway-Regular";
+        line-height: 2; }
+      .intro_articleBox_article_nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        margin: 50px 0 0 0; }
+        .intro_articleBox_article_nav_link_img {
+          padding: 0 10px; }
+          .intro_articleBox_article_nav_link_img_one {
+            height: 4rem;
+            width: auto; }
+          .intro_articleBox_article_nav_link_img_two {
+            height: 5rem;
+            width: auto; }
   .intro_arrowBox {
     width: 250px;
     height: 50px;
@@ -1076,7 +1139,7 @@ textarea:focus {
     .intro_arrowBox_text {
       color: #fff;
       font-family: "Raleway-Light";
-      font-size: 1.4rem;
+      font-size: 2rem;
       position: absolute;
       bottom: 14px;
       right: 108px; }
@@ -1091,9 +1154,53 @@ textarea:focus {
   background: #fff;
   width: 100%;
   height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   position: absolute;
   top: 100vh;
   left: 100%; }
+  .projects_title {
+    color: #000;
+    font-size: 2.4rem;
+    font-family: "Raleway-Bold";
+    padding: 25px 0 0 25px; }
+    .projects_title_span {
+      color: #CC5245; }
+  .projects_projectsBox {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin: 0px 50px; }
+    .projects_projectsBox_article {
+      width: 48%;
+      height: 300px;
+      background: url("intro_bg.236f3a88.jpg") no-repeat center;
+      background-size: cover;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+      .projects_projectsBox_article_title {
+        color: #fff;
+        font-family: "Raleway-SemiBold";
+        font-size: 3rem;
+        padding: 10px; }
+  .projects_nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .projects_nav_img {
+      height: 50px;
+      width: auto;
+      padding-bottom: 25px; }
   .projects_arrowBox {
     width: 250px;
     height: 50px;
@@ -1107,7 +1214,7 @@ textarea:focus {
     .projects_arrowBox_text {
       color: #000;
       font-family: "Raleway-Light";
-      font-size: 1.4rem;
+      font-size: 2rem;
       position: absolute;
       bottom: 14px;
       right: 100px; }
@@ -1135,7 +1242,7 @@ textarea:focus {
     .cv_arrowBox_text {
       color: #fff;
       font-family: "Raleway-Light";
-      font-size: 1.4rem;
+      font-size: 2rem;
       position: absolute;
       bottom: 14px;
       left: 103px; }
