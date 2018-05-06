@@ -1064,6 +1064,12 @@ textarea:focus {
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0); }
+    .home_arrowBox:hover > .home_arrowBox_text {
+      letter-spacing: 2; }
+    .home_arrowBox:hover > .home_arrowBox_img {
+      -webkit-transform: translate(-50%, 0) rotate(90deg) scale(1, -1);
+          -ms-transform: translate(-50%, 0) rotate(90deg) scale(1, -1);
+              transform: translate(-50%, 0) rotate(90deg) scale(1, -1); }
     .home_arrowBox_text {
       color: #fff;
       width: 100%;
@@ -1074,16 +1080,22 @@ textarea:focus {
       left: 50%;
       -webkit-transform: translate(-50%, 0);
           -ms-transform: translate(-50%, 0);
-              transform: translate(-50%, 0); }
+              transform: translate(-50%, 0);
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
       .home_arrowBox_text_span {
         color: #CC5245; }
     .home_arrowBox_img {
       position: absolute;
       bottom: 2.5rem;
       left: 53%;
-      -webkit-transform: translate(-50%, 0) rotate(90deg);
-          -ms-transform: translate(-50%, 0) rotate(90deg);
-              transform: translate(-50%, 0) rotate(90deg); }
+      -webkit-transform: translate(-50%, 0) rotate(90deg) scale(1, 1);
+          -ms-transform: translate(-50%, 0) rotate(90deg) scale(1, 1);
+              transform: translate(-50%, 0) rotate(90deg) scale(1, 1);
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
 
 .intro {
   background: url("intro_bg.236f3a88.jpg") no-repeat center;
@@ -1115,40 +1127,108 @@ textarea:focus {
         font-size: 2rem;
         font-family: "Raleway-Regular";
         line-height: 2; }
+        .intro_articleBox_article_text_span {
+          color: #CC5245; }
       .intro_articleBox_article_nav {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-align: center;
             align-items: center;
         margin: 50px 0 0 0; }
-        .intro_articleBox_article_nav_link_img {
-          padding: 0 10px; }
-          .intro_articleBox_article_nav_link_img_one {
-            height: 4rem;
-            width: auto; }
-          .intro_articleBox_article_nav_link_img_two {
-            height: 5rem;
-            width: auto; }
+        .intro_articleBox_article_nav_link {
+          position: relative; }
+          .intro_articleBox_article_nav_link_one:before {
+            content: 'LinkedIn';
+            color: #fff;
+            font-size: 2rem;
+            font-family: "Raleway-Light";
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            -webkit-transform: translate(0, -50%) scale(0);
+                -ms-transform: translate(0, -50%) scale(0);
+                    transform: translate(0, -50%) scale(0);
+            -webkit-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+            z-index: 1; }
+          .intro_articleBox_article_nav_link_one:hover:before {
+            right: 55px;
+            -webkit-transform: translate(0, -50%) scale(1);
+                -ms-transform: translate(0, -50%) scale(1);
+                    transform: translate(0, -50%) scale(1);
+            -webkit-transform-origin: top right;
+                -ms-transform-origin: top right;
+                    transform-origin: top right; }
+          .intro_articleBox_article_nav_link_two:after {
+            content: 'Mail';
+            color: #fff;
+            font-size: 2rem;
+            font-family: "Raleway-Light";
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            -webkit-transform: translate(0, -50%) scale(0);
+                -ms-transform: translate(0, -50%) scale(0);
+                    transform: translate(0, -50%) scale(0);
+            -webkit-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+            z-index: 1; }
+          .intro_articleBox_article_nav_link_two:hover:after {
+            left: 65px;
+            -webkit-transform: translate(0, -50%) scale(1);
+                -ms-transform: translate(0, -50%) scale(1);
+                    transform: translate(0, -50%) scale(1);
+            -webkit-transform-origin: top left;
+                -ms-transform-origin: top left;
+                    transform-origin: top left; }
+          .intro_articleBox_article_nav_link_img {
+            padding: 0 10px;
+            position: relative;
+            z-index: 2; }
+            .intro_articleBox_article_nav_link_img_one {
+              height: 4rem;
+              width: auto; }
+            .intro_articleBox_article_nav_link_img_two {
+              height: 5rem;
+              width: auto; }
   .intro_arrowBox {
-    width: 250px;
+    width: 300px;
     height: 50px;
     cursor: pointer;
     position: absolute;
     bottom: 0px;
     right: 0px; }
+    .intro_arrowBox:hover > .intro_arrowBox_text {
+      letter-spacing: 2; }
+    .intro_arrowBox:hover > .intro_arrowBox_img {
+      -webkit-transform: scale(1, -1);
+          -ms-transform: scale(1, -1);
+              transform: scale(1, -1);
+      bottom: 16px; }
     .intro_arrowBox_text {
       color: #fff;
       font-family: "Raleway-Light";
       font-size: 2rem;
       position: absolute;
       bottom: 14px;
-      right: 108px; }
+      right: 108px;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
       .intro_arrowBox_text_span {
         color: #CC5245; }
     .intro_arrowBox_img {
       position: absolute;
       bottom: 22px;
-      right: 28px; }
+      right: 28px;
+      -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+              transform: scale(1, 1);
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
 
 .projects {
   background: #fff;
@@ -1202,28 +1282,45 @@ textarea:focus {
       width: auto;
       padding-bottom: 25px; }
   .projects_arrowBox {
-    width: 250px;
+    width: 300px;
     height: 50px;
     cursor: pointer;
     position: absolute;
-    top: 100px;
-    right: -100px;
+    top: 125px;
+    right: -125px;
     -webkit-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
             transform: rotate(-90deg); }
+    .projects_arrowBox:hover > .projects_arrowBox_text {
+      letter-spacing: 2; }
+    .projects_arrowBox:hover > .projects_arrowBox_img {
+      -webkit-transform: scale(1, -1);
+          -ms-transform: scale(1, -1);
+              transform: scale(1, -1);
+      bottom: 22px;
+      right: 25px; }
     .projects_arrowBox_text {
       color: #000;
       font-family: "Raleway-Light";
       font-size: 2rem;
       position: absolute;
       bottom: 14px;
-      right: 100px; }
+      right: 100px;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
       .projects_arrowBox_text_span {
         color: #CC5245; }
     .projects_arrowBox_img {
       position: absolute;
       bottom: 22px;
-      right: 19px; }
+      right: 19px;
+      -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+              transform: scale(1, 1);
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
 
 .cv {
   background: #CC5245;
@@ -1239,19 +1336,27 @@ textarea:focus {
     position: absolute;
     top: 0px;
     left: 0px; }
+    .cv_arrowBox:hover > .cv_arrowBox_text {
+      letter-spacing: 2; }
     .cv_arrowBox_text {
       color: #fff;
       font-family: "Raleway-Light";
       font-size: 2rem;
       position: absolute;
       bottom: 14px;
-      left: 103px; }
+      left: 103px;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
       .cv_arrowBox_text_span {
         color: #000; }
     .cv_arrowBox_img {
       position: absolute;
       top: 23px;
       left: 23px;
-      -webkit-transform: rotate(180deg);
-          -ms-transform: rotate(180deg);
-              transform: rotate(180deg); }
+      -webkit-transform: translate(-50%, 0) rotate(180deg) scale(1, 1);
+          -ms-transform: translate(-50%, 0) rotate(180deg) scale(1, 1);
+              transform: translate(-50%, 0) rotate(180deg) scale(1, 1);
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }

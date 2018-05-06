@@ -12,6 +12,9 @@
     position: absolute;
     top: 0px;
     left: 0px;
+    &:hover > .cv_arrowBox_text {
+      letter-spacing: 2;
+    }
     &_text {
       color: #fff;
       font-family: $Rlw-Lgh;
@@ -19,6 +22,7 @@
       position: absolute;
       bottom: 14px;
       left: 103px;
+      transition: all 0.2s;
       &_span {
         color: #000;
       }
@@ -27,7 +31,11 @@
       position: absolute;
       top: 23px;
       left: 23px;
-      transform: rotate(180deg);
+      transform:
+      translate(-50%, 0)
+      rotate(180deg)
+      scale(1, 1);
+      transition: all 0.2s;
     }
   }
 }

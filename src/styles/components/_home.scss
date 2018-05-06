@@ -19,6 +19,7 @@
       font-size: $xBig;
       font-family: $Rlw-xLgh;
       margin-top: 50px;
+
     }
   }
   &_arrowBox {
@@ -29,6 +30,12 @@
     bottom: 1rem;
     left: 50%;
     transform: translate(-50%, 0);
+    &:hover > .home_arrowBox_text {
+      letter-spacing: 2;
+    }
+    &:hover > .home_arrowBox_img {
+      transform: translate(-50%, 0) rotate(90deg) scale(1, -1);
+    }
     &_text {
       color: #fff;
       width: 100%;
@@ -38,6 +45,7 @@
       text-align: center;
       left: 50%;
       transform: translate(-50%, 0);
+      transition: all 0.2s;
       &_span {
         color: $red;
       }
@@ -46,7 +54,11 @@
       position: absolute;
       bottom: 2.5rem;
       left: 53%;
-      transform: translate(-50%, 0) rotate(90deg);
+      transform:
+      translate(-50%, 0)
+      rotate(90deg)
+      scale(1, 1);
+      transition: all 0.2s;
     }
   }
 }

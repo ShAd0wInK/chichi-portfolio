@@ -3,7 +3,7 @@ var home = document.querySelector('.home');
 var homeHeight = home.offsetHeight;
 var homeWidth = home.offsetWidth;
 var gotoHome = document.querySelector('#gotoHome');
-var gotoIntro = document.querySelector('#gotoIntro');
+var gotoIntro =  document.querySelector('#gotoIntro');
 var gotoProjects = document.querySelector('#gotoProjects');
 var gotoCv = document.querySelector('#gotoCv');
 

@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({20:[function(require,module,exports) {
+})({22:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -107,7 +107,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],12:[function(require,module,exports) {
+},{}],14:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -138,19 +138,19 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":20}],11:[function(require,module,exports) {
+},{"./bundle-url":22}],13:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],9:[function(require,module,exports) {
+},{"_css_loader":14}],11:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../assets/fonts/Raleway/Raleway-ExtraLight.ttf":[["Raleway-ExtraLight.2b25e01a.ttf",15],15],"./../assets/fonts/Raleway/Raleway-Light.ttf":[["Raleway-Light.99e9cac1.ttf",16],16],"./../assets/fonts/Raleway/Raleway-Regular.ttf":[["Raleway-Regular.653c020b.ttf",18],18],"./../assets/fonts/Raleway/Raleway-SemiBold.ttf":[["Raleway-SemiBold.2de6002e.ttf",17],17],"./../assets/fonts/Raleway/Raleway-Bold.ttf":[["Raleway-Bold.11cb2380.ttf",19],19],"./../assets/imgs/bg.jpg":[["bg.51f6eb56.jpg",13],13],"./../assets/imgs/intro_bg.jpg":[["intro_bg.236f3a88.jpg",14],14],"_css_loader":12}],10:[function(require,module,exports) {
+},{"./../assets/fonts/Raleway/Raleway-ExtraLight.ttf":[["Raleway-ExtraLight.2b25e01a.ttf",17],17],"./../assets/fonts/Raleway/Raleway-Light.ttf":[["Raleway-Light.99e9cac1.ttf",18],18],"./../assets/fonts/Raleway/Raleway-Regular.ttf":[["Raleway-Regular.653c020b.ttf",19],19],"./../assets/fonts/Raleway/Raleway-SemiBold.ttf":[["Raleway-SemiBold.2de6002e.ttf",20],20],"./../assets/fonts/Raleway/Raleway-Bold.ttf":[["Raleway-Bold.11cb2380.ttf",21],21],"./../assets/imgs/bg.jpg":[["bg.51f6eb56.jpg",15],15],"./../assets/imgs/intro_bg.jpg":[["intro_bg.236f3a88.jpg",16],16],"_css_loader":14}],12:[function(require,module,exports) {
 // Moving
 var home = document.querySelector('.home');
 var homeHeight = home.offsetHeight;
@@ -188,7 +188,7 @@ gotoProjects.addEventListener('click', function () {
     behavior: 'smooth'
   });
 });
-},{}],2:[function(require,module,exports) {
+},{}],3:[function(require,module,exports) {
 'use strict';
 
 require('flexboxgrid');
@@ -196,7 +196,7 @@ require('flexboxgrid');
 require('../styles/styles.scss');
 
 require('./script.js');
-},{"flexboxgrid":11,"../styles/styles.scss":9,"./script.js":10}],38:[function(require,module,exports) {
+},{"flexboxgrid":13,"../styles/styles.scss":11,"./script.js":12}],44:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -226,7 +226,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56877' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50095' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -365,5 +365,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[38,2])
+},{}]},{},[44,3])
 //# sourceMappingURL=/js.9441fce8.map
