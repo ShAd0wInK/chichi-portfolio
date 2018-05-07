@@ -35,3 +35,14 @@ gotoProjects.addEventListener('click', function() {
     behavior: 'smooth'
   });
 });
+
+// nav
+var projectsNav = document.querySelector('.projects_nav');
+var projectsNavImg = document.querySelector('.projects_nav_img');
+
+projectsNav.addEventListener('mouseover', function() {
+  projectsNavImg.style.transform = 'rotate(360deg)';
+});
+projectsNav.addEventListener('mouseout', function() {
+  projectsNavImg.style.transform = '';
+});

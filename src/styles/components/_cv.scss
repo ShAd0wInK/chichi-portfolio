@@ -15,6 +15,10 @@
     &:hover > .cv_arrowBox_text {
       letter-spacing: 2;
     }
+    &:hover > .cv_arrowBox_img {
+      transform: rotate(180deg) scale(1, -1);
+      // left: 16px;
+    }
     &_text {
       color: #fff;
       font-family: $Rlw-Lgh;
@@ -31,10 +35,7 @@
       position: absolute;
       top: 23px;
       left: 23px;
-      transform:
-      translate(-50%, 0)
-      rotate(180deg)
-      scale(1, 1);
+      transform: rotate(180deg) scale(1,1);
       transition: all 0.2s;
     }
   }

@@ -109,7 +109,6 @@
     }
     &:hover > .intro_arrowBox_img {
       transform: scale(1, -1);
-      bottom: 16px;
     }
     &_text {
       color: #fff;
@@ -125,7 +124,7 @@
     }
     &_img {
       position: absolute;
-      bottom: 22px;
+      bottom: 19px;
       right: 28px;
       transform:
       scale(1, 1);

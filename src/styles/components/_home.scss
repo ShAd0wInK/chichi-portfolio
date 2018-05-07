@@ -24,10 +24,10 @@
   }
   &_arrowBox {
     cursor: pointer;
-    width: 15rem;
-    height: 10rem;
+    width: 150px;
+    height: 100px;
     position: absolute;
-    bottom: 1rem;
+    bottom: 20px;
     left: 50%;
     transform: translate(-50%, 0);
     &:hover > .home_arrowBox_text {
