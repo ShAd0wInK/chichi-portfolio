@@ -19,7 +19,8 @@
       font-size: $xBig;
       font-family: $Rlw-xLgh;
       margin-top: 50px;
-
+      animation: letterEntrance 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+      animation-delay: 0.5s;
     }
   }
   &_arrowBox {
