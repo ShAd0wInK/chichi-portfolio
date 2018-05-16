@@ -46,3 +46,5 @@ projectsNav.addEventListener('mouseover', function() {
 projectsNav.addEventListener('mouseout', function() {
   projectsNavImg.style.transform = '';
 });
+
+// projectpage

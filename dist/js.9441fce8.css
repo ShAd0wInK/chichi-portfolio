@@ -1524,3 +1524,62 @@ textarea:focus {
       -webkit-transition: all 0.2s;
       -o-transition: all 0.2s;
       transition: all 0.2s; }
+
+.projectPage {
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .projectPage_header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 20px; }
+    .projectPage_header_img {
+      height: 30px;
+      width: auto; }
+    .projectPage_header_crossBox {
+      background: red;
+      width: 25px;
+      height: 25px;
+      position: relative; }
+      .projectPage_header_crossBox_cross {
+        background: #fff;
+        width: 2px;
+        height: 35px;
+        position: absolute;
+        top: 50%;
+        left: 50%; }
+        .projectPage_header_crossBox_cross:nth-child(1) {
+          -webkit-transform: translate(-50%, -50%) rotate(45deg);
+              -ms-transform: translate(-50%, -50%) rotate(45deg);
+                  transform: translate(-50%, -50%) rotate(45deg); }
+        .projectPage_header_crossBox_cross:nth-child(2) {
+          -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+              -ms-transform: translate(-50%, -50%) rotate(-45deg);
+                  transform: translate(-50%, -50%) rotate(-45deg); }
+  .projectPage_wallpaper {
+    height: 300px;
+    overflow: hidden; }
+    .projectPage_wallpaper_img {
+      width: 100%; }
+    .projectPage_wallpaper_title {
+      color: #fff;
+      font-size: 2.4rem; }
+  .projectPage_contentBox_openable {
+    background: #F2F2F2;
+    font-size: 2rem;
+    font-family: "Raleway-SemiBold";
+    padding: 10px; }
+  .projectPage_contentBox_content {
+    background: #2C363F;
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: "Raleway-Regular";
+    line-height: 1.5;
+    padding: 25px; }

@@ -1,0 +1,68 @@
+.projectPage {
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  position: absolute;
+  top: 0;
+  left: 0;
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    &_img {
+      height: 30px;
+      width: auto;
+    }
+    &_crossBox {
+      background: red;
+      width: 25px;
+      height: 25px;
+      position: relative;
+      &_cross {
+        background: #fff;
+        width: 2px;
+        height: 35px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        &:nth-child(1) {
+          transform: translate(-50%,-50%) rotate(45deg);
+
+        }
+        &:nth-child(2) {
+          transform: translate(-50%,-50%) rotate(-45deg);
+        }
+      }
+    }
+  }
+  &_wallpaper {
+    height: 300px;
+    overflow: hidden;
+    &_img {
+      width: 100%;
+
+    }
+    &_title {
+      color: #fff;
+      font-size: $Big;
+    }
+  }
+  &_contentBox {
+    &_openable {
+      background: $light;
+      font-size: $xReg;
+      font-family: $Rlw-sBld;
+      padding: 10px;
+    }
+    &_content {
+      background: $blueDeep;
+      color:#fff;
+      font-size: $Reg;
+      font-family: $Rlw-Reg;
+      line-height: 1.5;
+      padding: 25px;
+    }
+  }
+
+}
