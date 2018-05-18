@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({22:[function(require,module,exports) {
+})({23:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -138,7 +138,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":22}],14:[function(require,module,exports) {
+},{"./bundle-url":23}],14:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
@@ -150,8 +150,8 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../assets/fonts/Raleway/Raleway-ExtraLight.ttf":[["Raleway-ExtraLight.2b25e01a.ttf",20],20],"./../assets/fonts/Raleway/Raleway-Light.ttf":[["Raleway-Light.99e9cac1.ttf",18],18],"./../assets/fonts/Raleway/Raleway-Regular.ttf":[["Raleway-Regular.653c020b.ttf",19],19],"./../assets/fonts/Raleway/Raleway-SemiBold.ttf":[["Raleway-SemiBold.2de6002e.ttf",17],17],"./../assets/fonts/Raleway/Raleway-Bold.ttf":[["Raleway-Bold.11cb2380.ttf",21],21],"./../assets/imgs/bg.jpg":[["bg.51f6eb56.jpg",4],4],"./../assets/imgs/intro_bg.jpg":[["intro_bg.236f3a88.jpg",16],16],"_css_loader":15}],13:[function(require,module,exports) {
-// Moving
+},{"./../assets/fonts/Raleway/Raleway-ExtraLight.ttf":[["Raleway-ExtraLight.2b25e01a.ttf",19],19],"./../assets/fonts/Raleway/Raleway-Light.ttf":[["Raleway-Light.99e9cac1.ttf",18],18],"./../assets/fonts/Raleway/Raleway-Regular.ttf":[["Raleway-Regular.653c020b.ttf",21],21],"./../assets/fonts/Raleway/Raleway-SemiBold.ttf":[["Raleway-SemiBold.2de6002e.ttf",20],20],"./../assets/fonts/Raleway/Raleway-Bold.ttf":[["Raleway-Bold.11cb2380.ttf",22],22],"./../assets/imgs/bg.jpg":[["bg.51f6eb56.jpg",16],16],"./../assets/imgs/intro_bg.jpg":[["intro_bg.236f3a88.jpg",17],17],"_css_loader":15}],13:[function(require,module,exports) {
+// Moving --------------
 var home = document.querySelector('.home');
 var homeHeight = home.offsetHeight;
 var homeWidth = home.offsetWidth;
@@ -189,7 +189,7 @@ gotoProjects.addEventListener('click', function () {
   });
 });
 
-// nav
+// github --------------
 var projectsNav = document.querySelector('.projects_nav');
 var projectsNavImg = document.querySelector('.projects_nav_img');
 
@@ -200,7 +200,28 @@ projectsNav.addEventListener('mouseout', function () {
   projectsNavImg.style.transform = '';
 });
 
-// projectpage
+// projectpage ---------
+var cross = document.querySelector('.projectPage_header_crossBox');
+var projectPage = document.querySelector('.projectPage');
+var projectBoxArticle = document.querySelector('.projects_projectsBox_article');
+
+cross.addEventListener('click', function () {
+  projectPage.classList.remove('is-visible');
+});
+projectBoxArticle.addEventListener('click', function () {
+  projectPage.classList.add('is-visible');
+});
+
+// dev -----------------
+
+var dev = document.querySelector('.home_dev');
+
+dev.addEventListener('mouseover', function () {
+  dev.innerHTML = '&#60;developped by Alexandre Delaloy&#47;&#62;';
+});
+dev.addEventListener('mouseout', function () {
+  dev.innerHTML = '&#60; . . . &#47;&#62;';
+});
 },{}],3:[function(require,module,exports) {
 'use strict';
 
@@ -209,7 +230,7 @@ require('flexboxgrid');
 require('../styles/styles.scss');
 
 require('./script.js');
-},{"flexboxgrid":14,"../styles/styles.scss":12,"./script.js":13}],35:[function(require,module,exports) {
+},{"flexboxgrid":14,"../styles/styles.scss":12,"./script.js":13}],24:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -239,7 +260,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49873' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49192' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -378,5 +399,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[35,3])
+},{}]},{},[24,3])
 //# sourceMappingURL=/js.9441fce8.map

@@ -62,4 +62,15 @@
       transition: all 0.2s;
     }
   }
+  &_dev {
+    color: #fff;
+    font-size: $xReg;
+    font-family: $Rlw-Reg;
+    text-decoration: none;
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 20px;
+    transition: all 0.2s;
+  }
 }

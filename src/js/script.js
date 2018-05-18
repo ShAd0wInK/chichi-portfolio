@@ -1,4 +1,4 @@
-// Moving
+// Moving --------------
 var home = document.querySelector('.home');
 var homeHeight = home.offsetHeight;
 var homeWidth = home.offsetWidth;
@@ -36,7 +36,7 @@ gotoProjects.addEventListener('click', function() {
   });
 });
 
-// nav
+// github --------------
 var projectsNav = document.querySelector('.projects_nav');
 var projectsNavImg = document.querySelector('.projects_nav_img');
 
@@ -47,4 +47,25 @@ projectsNav.addEventListener('mouseout', function() {
   projectsNavImg.style.transform = '';
 });
 
-// projectpage
+// projectpage ---------
+var cross = document.querySelector('.projectPage_header_crossBox');
+var projectPage = document.querySelector('.projectPage');
+var projectBoxArticle = document.querySelector('.projects_projectsBox_article')
+
+cross.addEventListener('click', function() {
+  projectPage.classList.remove('is-visible');
+});
+projectBoxArticle.addEventListener('click', function() {
+  projectPage.classList.add('is-visible');
+});
+
+// dev -----------------
+
+var dev = document.querySelector('.home_dev')
+
+dev.addEventListener('mouseover', function() {
+  dev.innerHTML = '&#60;developped by Alexandre Delaloy&#47;&#62;';
+});
+dev.addEventListener('mouseout', function() {
+  dev.innerHTML = '&#60; . . . &#47;&#62;';
+})

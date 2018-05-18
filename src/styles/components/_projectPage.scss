@@ -1,10 +1,14 @@
 .projectPage {
+  background: $blueDeep;
   width: 100%;
   height: 100vh;
   overflow: scroll;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 100vh;
+  left: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
   &_header {
     display: flex;
     justify-content: space-between;
@@ -15,14 +19,14 @@
       width: auto;
     }
     &_crossBox {
-      background: red;
       width: 25px;
-      height: 25px;
+      height: 22px;
       position: relative;
+      cursor: pointer;
       &_cross {
         background: #fff;
-        width: 2px;
-        height: 35px;
+        width: 1px;
+        height: 25px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -39,29 +43,44 @@
   &_wallpaper {
     height: 300px;
     overflow: hidden;
-    &_img {
-      width: 100%;
-
-    }
+    position: relative;
+    background: url('../assets/imgs/intro_bg.jpg') no-repeat center;
+    background-size: cover;
     &_title {
-      color: #fff;
-      font-size: $Big;
+      color: $light;
+      font-size: $tooBig;
+      font-family: $Rlw-xLgh;
+      position: absolute;
+      bottom: -10.5px;
+      padding-left: 30px;
     }
+  }
+  &_desc {
+    background: $light;
+    padding: 40px;
+    font-size: $xReg;
+    font-family: $Rlw-Reg;
+    line-height: 1.2;
   }
   &_contentBox {
     &_openable {
-      background: $light;
-      font-size: $xReg;
+      background: $blueDeep;
+      color: #fff;
+      font-size: $Big;
       font-family: $Rlw-sBld;
-      padding: 10px;
+      padding: 10px 40px;
+      &_arrow {
+        height: 20px;
+        width: auto;
+      }
     }
     &_content {
-      background: $blueDeep;
-      color:#fff;
+      background: $light;
+      color: #000;
       font-size: $Reg;
       font-family: $Rlw-Reg;
       line-height: 1.5;
-      padding: 25px;
+      padding: 25px 50px;
     }
   }
 

@@ -12,7 +12,10 @@ textarea:focus {
   outline: 0;
   resize: none;
 }
-
+.is-visible {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
 @keyframes letterEntrance {
   0% {
     letter-spacing: 1em;

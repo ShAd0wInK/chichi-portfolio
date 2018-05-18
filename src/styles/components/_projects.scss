@@ -43,6 +43,7 @@
       position: relative;
       overflow: hidden;
       text-decoration: none;
+      cursor: pointer;
       &:before {
         content: "";
         position: absolute;
