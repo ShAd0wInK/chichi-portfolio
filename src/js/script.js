@@ -58,6 +58,11 @@ for (var i = 0; i < cross.length; i++) {
   cross[i].addEventListener('click', function() {
     distribArticle.classList.remove('is-visible');
     cbzArticle.classList.remove('is-visible');
+    for (var j = 0; j < projectContent.length; j++ ) {
+      projectContent[j].classList.remove('is-open');
+      projectContent[j].classList.remove('is-visible');
+    }
+
   });
 }
 distrib.addEventListener('click', function() {
