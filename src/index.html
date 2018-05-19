@@ -10,7 +10,7 @@
   </head>
   <body>
     <section class="home">
-      <a href="http://alexandredelaloy.com" target="blank_" class="home_dev">&#60; . . . &#47;&#62;</a>
+      <div target="blank_" class="home_dev">&#60;<span class="home_dev_points">dev</span><span class="home_dev_span">developped_by_<a href="http://alexandredelaloy@live.com" class="home_dev_span_link"> Alexandre_Delaloy</a></span>&#47;&#62;</div>
       <div class="home_titleBox">
         <img src="assets/imgs/icons/logo-white.svg" alt="" class="home_titleBox_img puff-in-center">
         <h1 class="home_titleBox_title tracking-in-contract-bck">Christophe CHICHMANIAN</h1>
@@ -43,10 +43,10 @@
     <section class="projects">
       <h2 class="projects_title">SELECT * FROM   <span class="projects_title_span">projects</span></h2>
       <div class="projects_projectsBox">
-        <article class="projects_projectsBox_article">
+        <article class="projects_projectsBox_article" id="distrib">
           <h3 class="projects_projectsBox_article_title">Distrib'</h3>
         </article>
-        <article class="projects_projectsBox_article">
+        <article class="projects_projectsBox_article" id="cbz">
           <h3 class="projects_projectsBox_article_title">ClipboardZanager</h3>
         </article>
       </div>
@@ -67,7 +67,7 @@
 
       </div>
     </section>
-    <section class="projectPage">
+  <section class="projectPage" id="distribArticle">
       <header class="projectPage_header">
         <img src="assets/imgs/icons/logo-white.svg" alt="" class="projectPage_header_img">
         <div class="projectPage_header_crossBox">
@@ -76,7 +76,7 @@
         </div>
       </header>
       <div class="projectPage_wallpaper">
-        <h2 class="projectPage_wallpaper_title">DEFAULT_TITLE</h2>
+        <h2 class="projectPage_wallpaper_title">Distrib'</h2>
       </div>
       <div class="projectPage_desc">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat nostrum quo laudantium, odio recusandae. Deleniti beatae, sequi. Dicta eos repellat rem assumenda possimus, veniam earum eveniet ea similique, sint aliquid.
@@ -93,6 +93,58 @@
         <div class="projectPage_contentBox_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam possimus eum suscipit similique perferendis consequuntur ipsum deleniti sint, quidem maiores placeat tempore praesentium assumenda esse optio laboriosam nisi modi fugiat.</div>
         <div class="projectPage_contentBox_openable">
           <img class="projectPage_contentBox_openable_arrow" src="assets/imgs/icons/next.svg"> DEFAULT_OPENABLE
+        </div>
+        <div class="projectPage_contentBox_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam possimus eum suscipit similique perferendis consequuntur ipsum deleniti sint, quidem maiores placeat tempore praesentium assumenda esse optio laboriosam nisi modi fugiat.</div>
+      </section>
+    </section>
+    <section class="projectPage" id="cbzArticle">
+      <header class="projectPage_header">
+        <img src="assets/imgs/icons/logo-white.svg" alt="" class="projectPage_header_img">
+        <div class="projectPage_header_crossBox">
+          <div class="projectPage_header_crossBox_cross"></div>
+          <div class="projectPage_header_crossBox_cross"></div>
+        </div>
+      </header>
+      <div class="projectPage_wallpaper">
+        <h2 class="projectPage_wallpaper_title">ClipboardZanager</h2>
+      </div>
+      <div class="projectPage_desc">
+        "ClipboardZanager is a project made by Etienne BAUDOUX. It’s a clipboard manager, which means it allows you to keep an history of all the things you’ve copied. Copied stuffs can be synchronized with the cloud, so you can retrieve those from another device."
+      </div>
+      <section class="projectPage_contentBox">
+        <div class="projectPage_contentBox_openable">
+          <div class="projectPage_contentBox_openable_plus">
+            <div class="projectPage_contentBox_openable_plus_line"></div>
+            <div class="projectPage_contentBox_openable_plus_line"></div>
+          </div>
+          <h3 class="projectPage_contentBox_openable_title">1. Speech</h3>
+        </div>
+        <div class="projectPage_contentBox_content">
+          <p class="projectPage_contentBox_content_text">I’ve been collaborating on this project for one month only.</p>
+          <p class="projectPage_contentBox_content_text">The main functionality I added was a setting that allows the user whether passwords and credit card numbers should be synchronized with the cloud (everything is synced by default, except passwords and credit card numbers (thanks to this new feature)).</p>
+          <p class="projectPage_contentBox_content_text">It took me a bit of time to figure out how everything was linked, and where I had to put my piece of code. Once this was done, it was really nice to see how a big project is structured.</p>
+          <p class="projectPage_contentBox_content_text">I’ve also worked on another feature, which was the default icon when the app’s icon (from which the data is copied) couldn’t be found (for whatever reason).</p>
+          <p class="projectPage_contentBox_content_text">This project was the first one where I had the opportunity to work in group using tools such has versioning ones (Github). It took me away from my habit of working solo.</p>
+        </div>
+        <div class="projectPage_contentBox_openable">
+          <div class="projectPage_contentBox_openable_plus">
+            <div class="projectPage_contentBox_openable_plus_line"></div>
+            <div class="projectPage_contentBox_openable_plus_line"></div>
+          </div>
+          <h3 class="projectPage_contentBox_openable_title">2. Screens</h3>
+        </div>
+        <div class="projectPage_contentBox_content">
+          <img src="assets/imgs/cbz/screen-1.png" alt="" class="projectPage_contentBox_content_img">
+          <img src="assets/imgs/cbz/screen-2.png" alt="" class="projectPage_contentBox_content_img">
+          <img src="assets/imgs/cbz/screen-3.png" alt="" class="projectPage_contentBox_content_img">
+          <img src="assets/imgs/cbz/screen-4.png" alt="" class="projectPage_contentBox_content_img">
+        </div>
+        <div class="projectPage_contentBox_openable">
+          <div class="projectPage_contentBox_openable_plus">
+            <div class="projectPage_contentBox_openable_plus_line"></div>
+            <div class="projectPage_contentBox_openable_plus_line"></div>
+          </div>
+          <h3 class="projectPage_contentBox_openable_title">3. Download</h3>
         </div>
         <div class="projectPage_contentBox_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam possimus eum suscipit similique perferendis consequuntur ipsum deleniti sint, quidem maiores placeat tempore praesentium assumenda esse optio laboriosam nisi modi fugiat.</div>
       </section>

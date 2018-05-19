@@ -48,24 +48,50 @@ projectsNav.addEventListener('mouseout', function() {
 });
 
 // projectpage ---------
-var cross = document.querySelector('.projectPage_header_crossBox');
-var projectPage = document.querySelector('.projectPage');
-var projectBoxArticle = document.querySelector('.projects_projectsBox_article')
+var cross = document.querySelectorAll('.projectPage_header_crossBox');
+var distrib = document.querySelector('#distrib');
+var distribArticle = document.querySelector('#distribArticle');
+var cbz = document.querySelector('#cbz');
+var cbzArticle = document.querySelector('#cbzArticle');
 
-cross.addEventListener('click', function() {
-  projectPage.classList.remove('is-visible');
+for (var i = 0; i < cross.length; i++) {
+  cross[i].addEventListener('click', function() {
+    distribArticle.classList.remove('is-visible');
+    cbzArticle.classList.remove('is-visible');
+  });
+}
+distrib.addEventListener('click', function() {
+  distribArticle.classList.add('is-visible');
 });
-projectBoxArticle.addEventListener('click', function() {
-  projectPage.classList.add('is-visible');
+cbz.addEventListener('click', function() {
+  cbzArticle.classList.add('is-visible');
 });
 
 // dev -----------------
 
-var dev = document.querySelector('.home_dev')
+var dev = document.querySelector('.home_dev');
+var devPoints = document.querySelector('.home_dev_points');
+var devSpan = document.querySelector('.home_dev_span');
 
 dev.addEventListener('mouseover', function() {
-  dev.innerHTML = '&#60;developped by Alexandre Delaloy&#47;&#62;';
+  devPoints.style.display = 'none';
+  devSpan.style.display = 'flex';
 });
 dev.addEventListener('mouseout', function() {
-  dev.innerHTML = '&#60; . . . &#47;&#62;';
+  devPoints.style.display = 'flex';
+  devSpan.style.display = 'none';
 })
+
+// content
+
+var projectContent = document.querySelectorAll('.projectPage_contentBox_content');
+var projectOpenable = document.querySelectorAll('.projectPage_contentBox_openable');
+var projectImgs = document.querySelectorAll('projectPage_contentBox_content_img');
+
+for (let i = 0; i < projectOpenable.length; i++) {
+  projectOpenable[i].addEventListener('click', function() {
+    projectContent[i].classList.toggle('is-open');
+    projectContent[i].classList.toggle('is-visible');
+    projectImgs[i].classList.toggle('is-scaled');
+  })
+}

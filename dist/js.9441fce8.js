@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({23:[function(require,module,exports) {
+})({43:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -107,7 +107,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],15:[function(require,module,exports) {
+},{}],35:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -138,19 +138,19 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":23}],14:[function(require,module,exports) {
+},{"./bundle-url":43}],34:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":15}],12:[function(require,module,exports) {
+},{"_css_loader":35}],32:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../assets/fonts/Raleway/Raleway-ExtraLight.ttf":[["Raleway-ExtraLight.2b25e01a.ttf",19],19],"./../assets/fonts/Raleway/Raleway-Light.ttf":[["Raleway-Light.99e9cac1.ttf",18],18],"./../assets/fonts/Raleway/Raleway-Regular.ttf":[["Raleway-Regular.653c020b.ttf",21],21],"./../assets/fonts/Raleway/Raleway-SemiBold.ttf":[["Raleway-SemiBold.2de6002e.ttf",20],20],"./../assets/fonts/Raleway/Raleway-Bold.ttf":[["Raleway-Bold.11cb2380.ttf",22],22],"./../assets/imgs/bg.jpg":[["bg.51f6eb56.jpg",16],16],"./../assets/imgs/intro_bg.jpg":[["intro_bg.236f3a88.jpg",17],17],"_css_loader":15}],13:[function(require,module,exports) {
+},{"./../assets/fonts/Raleway/Raleway-ExtraLight.ttf":[["Raleway-ExtraLight.2b25e01a.ttf",39],39],"./../assets/fonts/Raleway/Raleway-Light.ttf":[["Raleway-Light.99e9cac1.ttf",38],38],"./../assets/fonts/Raleway/Raleway-Regular.ttf":[["Raleway-Regular.653c020b.ttf",41],41],"./../assets/fonts/Raleway/Raleway-SemiBold.ttf":[["Raleway-SemiBold.2de6002e.ttf",40],40],"./../assets/fonts/Raleway/Raleway-Bold.ttf":[["Raleway-Bold.11cb2380.ttf",42],42],"./../assets/imgs/bg.jpg":[["bg.51f6eb56.jpg",36],36],"./../assets/imgs/intro_bg.jpg":[["intro_bg.236f3a88.jpg",37],37],"./../assets/imgs/cbz/screen-0.png":[["screen-0.0abd823f.png",70],70],"_css_loader":35}],33:[function(require,module,exports) {
 // Moving --------------
 var home = document.querySelector('.home');
 var homeHeight = home.offsetHeight;
@@ -201,28 +201,58 @@ projectsNav.addEventListener('mouseout', function () {
 });
 
 // projectpage ---------
-var cross = document.querySelector('.projectPage_header_crossBox');
-var projectPage = document.querySelector('.projectPage');
-var projectBoxArticle = document.querySelector('.projects_projectsBox_article');
+var cross = document.querySelectorAll('.projectPage_header_crossBox');
+var distrib = document.querySelector('#distrib');
+var distribArticle = document.querySelector('#distribArticle');
+var cbz = document.querySelector('#cbz');
+var cbzArticle = document.querySelector('#cbzArticle');
 
-cross.addEventListener('click', function () {
-  projectPage.classList.remove('is-visible');
+for (var i = 0; i < cross.length; i++) {
+  cross[i].addEventListener('click', function () {
+    distribArticle.classList.remove('is-visible');
+    cbzArticle.classList.remove('is-visible');
+  });
+}
+distrib.addEventListener('click', function () {
+  distribArticle.classList.add('is-visible');
 });
-projectBoxArticle.addEventListener('click', function () {
-  projectPage.classList.add('is-visible');
+cbz.addEventListener('click', function () {
+  cbzArticle.classList.add('is-visible');
 });
 
 // dev -----------------
 
 var dev = document.querySelector('.home_dev');
+var devPoints = document.querySelector('.home_dev_points');
+var devSpan = document.querySelector('.home_dev_span');
 
 dev.addEventListener('mouseover', function () {
-  dev.innerHTML = '&#60;developped by Alexandre Delaloy&#47;&#62;';
+  devPoints.style.display = 'none';
+  devSpan.style.display = 'flex';
 });
 dev.addEventListener('mouseout', function () {
-  dev.innerHTML = '&#60; . . . &#47;&#62;';
+  devPoints.style.display = 'flex';
+  devSpan.style.display = 'none';
 });
-},{}],3:[function(require,module,exports) {
+
+// content
+
+var projectContent = document.querySelectorAll('.projectPage_contentBox_content');
+var projectOpenable = document.querySelectorAll('.projectPage_contentBox_openable');
+var projectImgs = document.querySelectorAll('projectPage_contentBox_content_img');
+
+var _loop = function _loop(_i) {
+  projectOpenable[_i].addEventListener('click', function () {
+    projectContent[_i].classList.toggle('is-open');
+    projectContent[_i].classList.toggle('is-visible');
+    projectImgs[_i].classList.toggle('is-scaled');
+  });
+};
+
+for (var _i = 0; _i < projectOpenable.length; _i++) {
+  _loop(_i);
+}
+},{}],23:[function(require,module,exports) {
 'use strict';
 
 require('flexboxgrid');
@@ -230,7 +260,7 @@ require('flexboxgrid');
 require('../styles/styles.scss');
 
 require('./script.js');
-},{"flexboxgrid":14,"../styles/styles.scss":12,"./script.js":13}],24:[function(require,module,exports) {
+},{"flexboxgrid":34,"../styles/styles.scss":32,"./script.js":33}],95:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -260,7 +290,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49192' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49916' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -399,5 +429,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[24,3])
+},{}]},{},[95,23])
 //# sourceMappingURL=/js.9441fce8.map

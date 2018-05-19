@@ -16,6 +16,14 @@ textarea:focus {
   visibility: visible !important;
   opacity: 1 !important;
 }
+.is-open {
+  padding: 25px 50px !important;
+  height: auto !important;
+}
+.is-scaled {
+  transform: scale(1) !important;
+  height: auto !important;
+}
 @keyframes letterEntrance {
   0% {
     letter-spacing: 1em;

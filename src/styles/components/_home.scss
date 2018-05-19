@@ -63,14 +63,32 @@
     }
   }
   &_dev {
-    color: #fff;
-    font-size: $xReg;
+    color: $link-lgh;
+    font-size: $norm;
     font-family: $Rlw-Reg;
     text-decoration: none;
     position: absolute;
     z-index: 2;
-    top: 20px;
-    left: 20px;
+    top: 0;
+    left: 0;
     transition: all 0.2s;
+    padding: 20px;
+    width: 350px;
+    display: flex;
+    &:hover {
+      color: $light;
+    }
+    &_points {
+      display: flex;
+
+    }
+    &_span {
+      display: none;
+      &_link {
+        text-decoration: none;
+        color: $link-lgh;
+
+      }
+    }
   }
 }

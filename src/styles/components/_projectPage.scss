@@ -23,6 +23,9 @@
       height: 22px;
       position: relative;
       cursor: pointer;
+      &:hover > .projectPage_header_crossBox_cross {
+        transform: translate(-50%,-50%) rotate(270deg);
+      }
       &_cross {
         background: #fff;
         width: 1px;
@@ -30,6 +33,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
+        transition: all 0.5s ease-out;
         &:nth-child(1) {
           transform: translate(-50%,-50%) rotate(45deg);
 
@@ -41,13 +45,13 @@
     }
   }
   &_wallpaper {
-    height: 300px;
+    height: 500px;
     overflow: hidden;
     position: relative;
-    background: url('../assets/imgs/intro_bg.jpg') no-repeat center;
+    background: url('../assets/imgs/cbz/screen-0.png') no-repeat center;
     background-size: cover;
     &_title {
-      color: $light;
+      color: #fff;
       font-size: $tooBig;
       font-family: $Rlw-xLgh;
       position: absolute;
@@ -56,31 +60,69 @@
     }
   }
   &_desc {
-    background: $light;
+    background: #fff;
     padding: 40px;
     font-size: $xReg;
     font-family: $Rlw-Reg;
     line-height: 1.2;
+    font-style: italic;
   }
   &_contentBox {
     &_openable {
       background: $blueDeep;
-      color: #fff;
-      font-size: $Big;
-      font-family: $Rlw-sBld;
-      padding: 10px 40px;
-      &_arrow {
+      padding: 10px 50px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &_title {
+        color: #fff;
+        font-size: $Big;
+        font-family: $Rlw-sBld;
+        position: relative;
+      }
+      &_plus {
+        width: 20px;
         height: 20px;
-        width: auto;
+        margin-right: 10px;
+        position: relative;
+        &_line {
+          background: $link-lgh;
+          width: 20px;
+          height: 2px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          &:nth-child(1) {
+            transform: translate(-50%, -50%) rotate(0deg);
+          }
+          &:nth-child(2) {
+            transform: translate(-50%, -50%) rotate(90deg);
+          }
+        }
       }
     }
     &_content {
       background: $light;
       color: #000;
-      font-size: $Reg;
+      font-size: $norm;
       font-family: $Rlw-Reg;
       line-height: 1.5;
-      padding: 25px 50px;
+      padding: 0;
+      height: 0px;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.5s ease-out;
+      &_text {
+        text-align: justify;
+        padding-bottom: 10px;
+      }
+      &_img {
+        width: 94%;
+        padding: 25px 3% 0;
+        transform: scale(0);
+        transition: all 0.5s ease-out;
+        height: 0;
+      }
     }
   }
 
