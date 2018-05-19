@@ -1,4 +1,4 @@
-// Moving --------------
+// Moving ---------------------------------------
 var home = document.querySelector('.home');
 var homeHeight = home.offsetHeight;
 var homeWidth = home.offsetWidth;
@@ -36,7 +36,7 @@ gotoProjects.addEventListener('click', function() {
   });
 });
 
-// github --------------
+// github ---------------------------------------
 var projectsNav = document.querySelector('.projects_nav');
 var projectsNavImg = document.querySelector('.projects_nav_img');
 
@@ -47,7 +47,7 @@ projectsNav.addEventListener('mouseout', function() {
   projectsNavImg.style.transform = '';
 });
 
-// projectpage ---------
+// projectpage ----------------------------------
 var cross = document.querySelectorAll('.projectPage_header_crossBox');
 var distrib = document.querySelector('#distrib');
 var distribArticle = document.querySelector('#distribArticle');
@@ -67,7 +67,7 @@ cbz.addEventListener('click', function() {
   cbzArticle.classList.add('is-visible');
 });
 
-// dev -----------------
+// dev ------------------------------------------
 
 var dev = document.querySelector('.home_dev');
 var devPoints = document.querySelector('.home_dev_points');
@@ -82,16 +82,15 @@ dev.addEventListener('mouseout', function() {
   devSpan.style.display = 'none';
 })
 
-// content
-
+// content --------------------------------------
 var projectContent = document.querySelectorAll('.projectPage_contentBox_content');
 var projectOpenable = document.querySelectorAll('.projectPage_contentBox_openable');
-var projectImgs = document.querySelectorAll('projectPage_contentBox_content_img');
+// var projectImgs = document.querySelectorAll('projectPage_contentBox_content_img');
 
 for (let i = 0; i < projectOpenable.length; i++) {
   projectOpenable[i].addEventListener('click', function() {
     projectContent[i].classList.toggle('is-open');
     projectContent[i].classList.toggle('is-visible');
-    projectImgs[i].classList.toggle('is-scaled');
+    // projectImgs[i].classList.toggle('is-scaled');
   })
 }
